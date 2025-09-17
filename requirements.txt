@@ -1,0 +1,8 @@
+langchain
+langchain-community
+langchain-huggingface
+transformers
+torch
+sentence-transformers
+faiss-cpu
+PyMuPDF
