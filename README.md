@@ -1,14 +1,28 @@
+# 📚 RAG PDF Chatbot (Open Source)
 
-# 📚 PDF RAG Chat (Open Source)
+This project is a **Retrieval-Augmented Generation (RAG)** pipeline built with:
+- **PyMuPDF (fitz)** for PDF text extraction
+- **LangChain** for text splitting & QA pipeline
+- **HuggingFace Embeddings** (`all-MiniLM-L6-v2`) + **FAISS** for vector storage
+- **Open-source LLMs** (e.g. `distilgpt2`, Falcon, Mistral, LLaMA2) for answering questions
 
-This is a **Retrieval-Augmented Generation (RAG) app** that lets you upload PDFs, build a FAISS index, and query them via chat using **open-source LLMs**.
+---
 
 ## 🚀 Features
-- Ingest PDFs → split into chunks → build FAISS index
-- Embeddings: `sentence-transformers/all-MiniLM-L6-v2`
-- LLM: HuggingFace model (default: `mistralai/Mistral-7B-Instruct-v0.2`)
-- Chat UI built with **Streamlit**
-- 100% open source, no API keys required
+- Extracts text from PDFs
+- Splits text into context chunks
+- Stores chunks in FAISS for fast retrieval
+- Uses HuggingFace LLM for natural language Q&A
+- Fully open-source, no API keys required
 
-## 📂 Project Structure
+---
+
+## 🛠️ Installation
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/rag-pdf-chat.git
+cd rag-pdf-chat
+pip install -r requirements.txt
 
